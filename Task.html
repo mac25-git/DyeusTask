@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=DM+Sans&family=DM+Serif+Display&family=Montserrat&family=Poppins&display=swap');
+</style>
+</head>
+<body>
+	<!--Menu icon-->
+<div align="center">
+	<div class="menuclass">
+<div class="menu"></div>
+<div class="menu"></div>
+<div class="menu"></div>
+</div>
+
+<!--Cart icon-->
+<div class="fa fa-shopping-cart" id="cart" style="font-size:36px;color: white"></div>
+<br><br><br><br>	<hr>	<br><br><br><br>
+<!--Image-->
+<img src="pic.png" alt="pic" style="width: 80%;">
+<br>
+<div align="left" style="margin: 32px;"><br>
+	<!--Text-->
+<h1 id="head">Everyday rinse and reload</h1>
+<p id="para">Achieve your dream skin goal with this complete package of skincare products that will rejuvenate your day.</p>
+
+
+<!--Rating-->
+<div class="star" id="div1">
+<span class="fa fa-star checked" style="padding-top: 6px; padding-left: 16px ;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half"></span>
+</div>
+<div id="div2">
+<h3>4.5</h3>
+<span id="rev">Click to read reviews ></span>
+</div>
+<br>
+<!--Price-->
+
+<div id="div1">
+<h1 id="p1"> &#8377; 899 &ensp; </h1></div>
+<div id="div2">
+<h1 id="p2">&#8377; 1299 </h1> 
+</div>
+</div>
+
+<!--Variant picker-->
+<div class="picker" align="left" id="demo" onclick="myFunction()"> 
+	<div class="popular"><p id="pop">
+<span class="fa fa-star checked"></span>
+ MOST POPULAR
+<span class="fa fa-star checked"></span></p>
+</div>
+	<div id="l1"><h2>1 Months Pack (4 tubes)</h2><p id="save">Savings:  &#8377; 200</p>
+<p id="per">38% Saved &nbsp;
+<span id="best"> Best Results</span></p>
+</div>
+<div>
+<p id="p3"> &#8377; 595 </p>
+<p id="p4"> &#8377; 795</p>
+</div>
+</div> 
+	<div class="picker1" align="left" id="demo1" onclick="myFunction1()">
+		<div id="l1"><h2>3 Months Pack (12 tubes)</h2><p id="save">Savings:  &#8377; 100</p>
+<p id=per>	12% Saved</p></div><span style="float: right;">&#10003;</span>
+<div> 
+<p id="p3"> &#8377; 899 </p>
+<p id="p4"> &#8377; 999</p></div> 
+</div> 
+
+<!--Add to Cart Button-->
+		<BR>
+			<button class="button">
+				<span class="fa fa-shopping-cart" style="font-size:20px">
+				</span>
+				<b> &emsp; ADD TO CART </b>
+			</button>	
+</div>
+</div>
+
+<!--JavaScript-->
+<script>
+function myFunction1() {
+  document.getElementById("demo1").innerHTML = "&#10003;";
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = "&#10003;";
+}
+</script>
+</body>
+</html> 
