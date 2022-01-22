@@ -53,7 +53,7 @@
 </div>
 
 <!--Variant picker-->
-<div class="picker" align="left" id="demo" onclick="myFunction()"> 
+<div class="picker" align="left" id="box1"> 
 	<div class="popular"><p id="pop">
 <span class="fa fa-star checked"></span>
  MOST POPULAR
@@ -68,9 +68,9 @@
 <p id="p4"> &#8377; 795</p>
 </div>
 </div> 
-	<div class="picker1" align="left" id="demo1" onclick="myFunction1()">
+	<div class="picker1" align="left" id="box2">
 		<div id="l1"><h2>3 Months Pack (12 tubes)</h2><p id="save">Savings:  &#8377; 100</p>
-<p id=per>	12% Saved</p></div><span style="float: right;">&#10003;</span>
+<p id=per>	12% Saved</p></div>
 <div> 
 <p id="p3"> &#8377; 899 </p>
 <p id="p4"> &#8377; 999</p></div> 
@@ -88,12 +88,19 @@
 
 <!--JavaScript-->
 <script>
-function myFunction1() {
-  document.getElementById("demo1").innerHTML = "&#10003;";
-}
-function myFunction() {
-  document.getElementById("demo").innerHTML = "&#10003;";
-}
+	document.addEventListener("DOMContentLoaded", function() {
+    var yes = document.getElementById("box1");
+    var no = document.getElementById("box2");
+    yes.addEventListener("click", function() {
+        yes.style.cssText = ' border: solid 2px white;'
+        no.style.cssText = ' border-style: none;'
+    }, false);
+    no.addEventListener("click", function() {
+    	no.style.cssText = ' border: solid 2px white;'
+        yes.style.cssText = ' border-style: none;'
+    }, false);
+}, false);
+
 </script>
 </body>
 </html> 
